@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+.body {
+  /*font-family:  Georgia, serif;*/
+}
+
+nav {
+  margin-top: 18px;
+}
+
+.upvote-menu {
+  position: relative;
+  bottom: 38px;
+  left: 9px;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: #1c8adb;
+  color: #fff;
+  padding: 6px;
+ }
+
+.vote-count {
+  background-color: indianred;
+  color: #fff;
+  padding: 6px;
+}
+
+.dog {
+  float: left;
+  margin: 15px;
+}
