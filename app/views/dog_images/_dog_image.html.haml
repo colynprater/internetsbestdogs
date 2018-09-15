@@ -1,0 +1,12 @@
+.dog{ 'data-id' => dog_image.id }
+
+  = image_tag dog_image.img_url, width: 284, height: 284
+
+  .upvote-menu
+    %span.vote-count Votes: #{dog_image.user_votes.count}
+
+    - unless dog_image.voters_include?(current_user)
+      %span= link_to 'Upvote',
+        upvotes_path(img_url: dog_image.img_url),
+        method: :post,
+        class: 'upvote-link'

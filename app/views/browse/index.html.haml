@@ -1,0 +1,14 @@
+%h1 Browse Dogs
+
+- @dog_image_urls.each do |dog_image_url|
+  .dog
+    = image_tag dog_image_url, width: 284, height: 284
+    .upvote-menu
+      %span
+        = link_to 'Upvote', upvotes_path(img_url: dog_image_url), method: :post, class: 'upvote-link'
+
+
+
+
+
+

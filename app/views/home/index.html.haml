@@ -1,0 +1,10 @@
+%h1 The Internets Best Dogs
+
+%h2 The current top #{@dog_images.count}
+
+- if @dog_images.any?
+  .dogs
+    - @dog_images.each do |dog_image|
+      = render partial: 'dog_images/dog_image', locals: { dog_image: dog_image }
+
+%button.load-more Load More dogs
